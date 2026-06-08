@@ -4,6 +4,7 @@
 > CLAHE night vision · Haarcascade face detection · Voice commands · BLE control
 
 **Developer:** Kritarth Awasthi 
+
 **Status:** Prototype complete
 
 ---
