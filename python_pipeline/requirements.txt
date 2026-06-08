@@ -1,0 +1,5 @@
+opencv-contrib-python>=4.8.0
+SpeechRecognition>=3.10.0
+requests>=2.31.0
+numpy>=1.24.0
+PyAudio>=0.2.13
