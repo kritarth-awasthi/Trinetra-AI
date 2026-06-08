@@ -3,8 +3,7 @@
 > Real-time computer vision system integrated into a wearable helmet.
 > CLAHE night vision · Haarcascade face detection · Voice commands · BLE control
 
-**Developer:** Kritarth Awasthi | BIT Mesra, Jaipur  
-**Duration:** May – August 2025  
+**Developer:** Kritarth Awasthi 
 **Status:** Prototype complete
 
 ---
