@@ -1,6 +1,6 @@
 # Trinetra AI — Smart Helmet
 
-> Real-time computer vision system integrated into a wearable helmet.
+> Real-time computer vision system integrated into a wearable helmet
 > CLAHE night vision · Haarcascade face detection · Voice commands · BLE control
 
 **Developer:** Kritarth Awasthi 
@@ -15,7 +15,7 @@ A wearable smart helmet that streams live video from an ESP32-CAM to a
 connected laptop, where a Python pipeline performs real-time face detection,
 night vision enhancement, and voice command recognition. Processed HUD data
 is sent back to an OLED display mounted on the helmet. A Kotlin Android app
-provides BLE-based remote control.
+provides BLE-based remote control
 
 ---
 
