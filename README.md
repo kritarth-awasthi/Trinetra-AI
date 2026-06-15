@@ -15,7 +15,7 @@ A wearable smart helmet that streams live video from an ESP32-CAM to a
 connected laptop, where a Python pipeline performs real-time face detection,
 night vision enhancement, and voice command recognition. Processed HUD data
 is sent back to an OLED display mounted on the helmet. A Kotlin Android app
-provides BLE-based remote control
+provides BLE-based remote control.
 
 ---
 
@@ -85,11 +85,11 @@ Update `WIFI_SSID` and `WIFI_PASSWORD` in the `.ino` file before flashing.
 
 ## Roadmap
 
-- [ ] YOLOv8 object detection
-- [ ] DeepFace recognition (replace LBPH)
-- [ ] Offline voice commands (Whisper — remove Google API)
-- [ ] Migrate processing to Raspberry Pi (on-helmet)
-- [ ] Real-time video stream inside Android app
+- [ ] YOLOv8 object detection.
+- [ ] DeepFace recognition (replace LBPH).
+- [ ] Offline voice commands (Whisper — remove Google API).
+- [ ] Migrate processing to Raspberry Pi (on-helmet).
+- [ ] Real-time video stream inside Android app.
 
 ---
 *Kritarth Awasthi | BIT Mesra, Jaipur | May–Aug 2025*
