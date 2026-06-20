@@ -1,11 +1,11 @@
 /*
  * ╔══════════════════════════════════════════════════════════════╗
- * ║                   T R I N E T R A   A I                     ║
+ * ║                   T R I N E T R A   A I                      ║
  * ║                Smart Helmet — ESP32-CAM Firmware             ║
  * ║                                                              ║
- * ║  Developer : Kritarth Awasthi | BIT Mesra, Jaipur           ║
- * ║  Hardware  : AI-Thinker ESP32-CAM + SSD1306 OLED            ║
- * ║  Role      : MJPEG video stream + OLED HUD + BLE server     ║
+ * ║  Developer : Kritarth Awasthi | BIT Mesra, Jaipur            ║
+ * ║  Hardware  : AI-Thinker ESP32-CAM + SSD1306 OLED             ║
+ * ║  Role      : MJPEG video stream + OLED HUD + BLE server      ║
  * ╚══════════════════════════════════════════════════════════════╝
  *
  *  SYSTEM FLOW:
