@@ -1,6 +1,6 @@
 # Trinetra AI — Smart Helmet
 
-> Real-time computer vision system integrated into a wearable helmet
+> Real-time computer vision system integrated into a wearable helmet.
 > CLAHE night vision · Haarcascade face detection · Voice commands · BLE control
 
 **Developer:** Kritarth Awasthi 
