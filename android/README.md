@@ -6,8 +6,8 @@ control commands and receive status notifications.
 
 ## BLE Communication
 - **Service UUID:** 4fafc201-1fb5-459e-8fcc-c5c9c331914b
-- **Command Characteristic (WRITE):** Send commands to helmet
-- **Status Characteristic (NOTIFY):** Receive detection results
+- **Command Characteristic (WRITE):** Send commands to helmet.
+- **Status Characteristic (NOTIFY):** Receive detection results.
 
 ## Commands Sent from App
 | Command    | Effect                        |
@@ -28,7 +28,7 @@ mode=NIGHT,det=No face
 - Android SDK min API 23
 
 ## Roadmap
-- Live camera feed view inside app (via WiFi HTTP stream)
-- Known faces database management
-- Voice command trigger from phone
-- Helmet battery level indicator
+- Live camera feed view inside app (via WiFi HTTP stream).
+- Known faces database management.
+- Voice command trigger from phone.
+- Helmet battery level indicator.
