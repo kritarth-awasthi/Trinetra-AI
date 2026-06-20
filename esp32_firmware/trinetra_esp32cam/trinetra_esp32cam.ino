@@ -27,11 +27,11 @@
 #include <BLE2902.h>
 #include "camera_config.h"
 
-// ── WiFi Credentials ──────────────────────────────────────────────────────────
+// ── WiFi Credentials
 #define WIFI_SSID     "YOUR_SSID"
 #define WIFI_PASSWORD "YOUR_PASSWORD"
 
-// ── OLED Display ──────────────────────────────────────────────────────────────
+// ── OLED Display 
 #define OLED_WIDTH    128
 #define OLED_HEIGHT    64
 #define OLED_RESET     -1
@@ -39,12 +39,12 @@
 #define OLED_SCL       14
 Adafruit_SSD1306 display(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
 
-// ── BLE UUIDs ─────────────────────────────────────────────────────────────────
+// ── BLE UUIDs 
 #define BLE_SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
 #define BLE_COMMAND_CHAR_UUID   "beb5483e-36e1-4688-b7f5-ea07361b26a8"
 #define BLE_STATUS_CHAR_UUID    "beb5483e-36e1-4688-b7f5-ea07361b26a9"
 
-// ── Global State ──────────────────────────────────────────────────────────────
+// ── Global State 
 bool        nightModeActive  = false;
 bool        bleConnected     = false;
 String      lastDetection    = "No face";
@@ -53,7 +53,7 @@ httpd_handle_t camera_httpd  = NULL;
 
 BLECharacteristic* pStatusCharacteristic = nullptr;
 
-// ── HTTP Stream Handler ───────────────────────────────────────────────────────
+// ── HTTP Stream Handler 
 #define PART_BOUNDARY "123456789000000000000987654321"
 static const char* STREAM_CONTENT_TYPE =
   "multipart/x-mixed-replace;boundary=" PART_BOUNDARY;
@@ -89,7 +89,7 @@ esp_err_t stream_handler(httpd_req_t *req) {
   return res;
 }
 
-// ── HUD Update Handler (receives data from Python pipeline) ───────────────────
+// ── HUD Update Handler (receives data from Python pipeline) 
 esp_err_t hud_update_handler(httpd_req_t *req) {
   char buf[256];
   int  ret = httpd_req_recv(req, buf, sizeof(buf) - 1);
@@ -115,7 +115,7 @@ esp_err_t hud_update_handler(httpd_req_t *req) {
   return ESP_OK;
 }
 
-// ── Start HTTP Server ─────────────────────────────────────────────────────────
+// ── Start HTTP Server 
 void startCameraServer() {
   httpd_config_t config = HTTPD_DEFAULT_CONFIG();
   config.server_port    = 80;
@@ -141,7 +141,7 @@ void startCameraServer() {
   }
 }
 
-// ── OLED HUD Display ──────────────────────────────────────────────────────────
+// ── OLED HUD Display
 void updateOLED() {
   display.clearDisplay();
   display.setTextSize(1);
@@ -171,7 +171,7 @@ void updateOLED() {
   display.display();
 }
 
-// ── BLE Callbacks ─────────────────────────────────────────────────────────────
+// ── BLE Callbacks 
 class TrinetraBLECallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer* pServer) {
     bleConnected = true;
@@ -207,7 +207,7 @@ void notifyBLE() {
   }
 }
 
-// ── BLE Initialisation ────────────────────────────────────────────────────────
+// ── BLE Initialisation
 void initBLE() {
   BLEDevice::init("Trinetra-AI");
   BLEServer* pServer = BLEDevice::createServer();
@@ -234,7 +234,7 @@ void initBLE() {
   Serial.println(F("[BLE] Advertising as 'Trinetra-AI'"));
 }
 
-// =============================================================================
+
 void setup() {
   Serial.begin(115200);
   Serial.println(F("\n[TRINETRA] Booting..."));
