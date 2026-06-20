@@ -4,39 +4,39 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      HELMET (Wearable)                       │
-│                                                              │
+│                      HELMET (Wearable)                      │
+│                                                             │
 │  ┌──────────────────┐    I2C    ┌──────────────────────┐    │
 │  │  ESP32-CAM       │ ────────► │  SSD1306 OLED        │    │
 │  │  AI-Thinker      │           │  128x64 HUD display  │    │
 │  │                  │           └──────────────────────┘    │
-│  │  OV2640 Camera   │                                        │
-│  │  WiFi 2.4GHz     │                                        │
-│  │  BLE 4.2         │                                        │
-│  └────────┬─────────┘                                        │
-│           │ WiFi MJPEG stream (HTTP)                         │
-└───────────┼──────────────────────────────────────────────────┘
+│  │  OV2640 Camera   │                                       │
+│  │  WiFi 2.4GHz     │                                       │
+│  │  BLE 4.2         │                                       │
+│  └────────┬─────────┘                                       │
+│           │ WiFi MJPEG stream (HTTP)                        │
+└───────────┼─────────────────────────────────────────────────┘
             │
             │  Same WiFi network
             ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                   LAPTOP (Processing)                        │
-│                                                              │
-│  main.py                                                     │
+│                   LAPTOP (Processing)                       │
+│                                                             │
+│  main.py                                                    │
 │  ├── face_detector.py   → Haarcascade + LBPH recognition    │
 │  ├── night_vision.py    → CLAHE luminance enhancement       │
 │  ├── voice_commander.py → SpeechRecognition keywords        │
 │  └── hud_overlay.py     → AR overlay on laptop display      │
-│                                                              │
+│                                                             │
 │  HTTP POST /hud → ESP32 OLED update                         │
 └─────────────────────────────────────────────────────────────┘
             │
             │  BLE 4.2
             ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                 ANDROID APP (Kotlin)                         │
-│  Send commands: NIGHT_ON / NIGHT_OFF / CAPTURE               │
-│  Receive status: detection result + active mode              │
+│                 ANDROID APP (Kotlin)                        │
+│  Send commands: NIGHT_ON / NIGHT_OFF / CAPTURE              │
+│  Receive status: detection result + active mode             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
