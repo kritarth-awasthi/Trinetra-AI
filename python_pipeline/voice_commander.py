@@ -6,11 +6,11 @@ basic keyword detection. Runs in a background thread, fires a
 callback on recognised keyword.
 
 Supported keywords:
-  "night mode"   → activate night vision
-  "normal mode"  → deactivate night vision
-  "identify"     → force face identification pass
-  "capture"      → save current frame
-  "stop"         → shutdown pipeline
+  "night mode"   → activate night vision.
+  "normal mode"  → deactivate night vision.
+  "identify"     → force face identification pass.
+  "capture"      → save current frame.
+  "stop"         → shutdown pipeline.
 
 ROADMAP: Replace Google API with offline pocketsphinx or Whisper
          for helmet use without internet dependency.
