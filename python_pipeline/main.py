@@ -1,9 +1,9 @@
 """
 ╔══════════════════════════════════════════════════════════════╗
-║                   T R I N E T R A   A I                     ║
+║                   T R I N E T R A   A I                      ║
 ║              Smart Helmet — Python Processing Pipeline       ║
 ║                                                              ║
-║  Developer : Kritarth Awasthi | BIT Mesra, Jaipur           ║
+║  Developer : Kritarth Awasthi                                ║
 ║  Runs on   : Laptop connected to ESP32-CAM via WiFi          ║
 ╚══════════════════════════════════════════════════════════════╝
 
@@ -29,14 +29,14 @@ from night_vision    import NightVisionProcessor
 from voice_commander import VoiceCommander
 from hud_overlay     import HUDOverlay
 
-# ── Configuration ─────────────────────────────────────────────────────────────
+# ── Configuration 
 ESP32_IP         = "192.168.1.100"   # Change to your ESP32-CAM IP
 ESP32_PORT       = 80
 STREAM_URL       = f"http://{ESP32_IP}:{ESP32_PORT}/stream"
 HUD_UPDATE_URL   = f"http://{ESP32_IP}:{ESP32_PORT}/hud"
 HUD_UPDATE_INTERVAL = 0.5            # Send HUD update to ESP32 every 0.5s
 
-# ── Global State ───────────────────────────────────────────────────────────────
+# ── Global State 
 night_mode_active  = False
 current_detection  = "Scanning..."
 last_hud_update    = 0
