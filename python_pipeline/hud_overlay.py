@@ -46,35 +46,35 @@ class HUDOverlay:
         h, w = frame.shape[:2]
         overlay = frame.copy()
 
-        # ── Corner brackets (helmet visor aesthetic) ─────────────────────────
+        # ── Corner brackets (helmet visor aesthetic) 
         bracket_len = 20
         bracket_col = HUD_GREEN if mode == "NORMAL" else HUD_NIGHT_TINT
         self._draw_corner_brackets(overlay, w, h, bracket_len, bracket_col)
 
-        # ── Mode indicator (top left) ─────────────────────────────────────────
+        # ── Mode indicator (top left) 
         mode_text = f"[ {mode} MODE ]"
         mode_col  = HUD_GREEN if mode == "NORMAL" else HUD_NIGHT_TINT
         cv2.putText(overlay, mode_text, (10, 20),
                     self.font, self.font_small, mode_col, self.thickness)
 
-        # ── FPS counter (top right) ───────────────────────────────────────────
+        # ── FPS counter (top right) 
         fps_text = f"FPS: {fps}"
         fps_x    = w - 90
         cv2.putText(overlay, fps_text, (fps_x, 20),
                     self.font, self.font_small, HUD_CYAN, self.thickness)
 
-        # ── System label (bottom left) ────────────────────────────────────────
+        # ── System label (bottom left) 
         cv2.putText(overlay, "TRINETRA AI v1.0", (10, h - 10),
                     self.font, self.font_small, HUD_CYAN, self.thickness)
 
-        # ── Voice command feedback (bottom right) ─────────────────────────────
+        # ── Voice command feedback (bottom right) 
         if voice_hint:
             cmd_text = f"CMD: {voice_hint.upper()}"
             cmd_x    = w - len(cmd_text) * 8
             cv2.putText(overlay, cmd_text, (cmd_x, h - 10),
                         self.font, self.font_small, HUD_WHITE, self.thickness)
 
-        # ── Face detection boxes and labels ───────────────────────────────────
+        # ── Face detection boxes and labels 
         for i, (x, y, fw, fh) in enumerate(faces):
             label = labels[i] if i < len(labels) else "Unknown"
             is_known = "Unknown" not in label
@@ -101,7 +101,7 @@ class HUDOverlay:
                 except ValueError:
                     pass
 
-        # ── Scanning animation (when no faces) ───────────────────────────────
+        # ── Scanning animation (when no faces) 
         if not faces:
             cx, cy   = w // 2, h // 2
             scan_rad = 40
