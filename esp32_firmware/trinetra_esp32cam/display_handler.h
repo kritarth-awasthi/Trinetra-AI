@@ -1,6 +1,6 @@
 /*
- * display_handler.h — OLED HUD Display Handler
- * Compatible with SSD1306 128x64 I2C display (most common small OLED)
+ * display_handler.h — OLED HUD Display Handler.
+ * Compatible with SSD1306 128x64 I2C display (most common small OLED).
  * Swap Adafruit_SSD1306 for your display library if using different hardware.
  */
 #pragma once
