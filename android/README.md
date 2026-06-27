@@ -28,7 +28,7 @@ mode=NIGHT,det=No face
 - Android SDK min API 23
 
 ## Roadmap
-- Live camera feed view inside app (via WiFi HTTP stream).
-- Known faces database management.
-- Voice command trigger from phone.
-- Helmet battery level indicator.
+- Live camera feed view inside app (via WiFi HTTP stream)
+- Known faces database management
+- Voice command trigger from phone
+- Helmet battery level indicator
