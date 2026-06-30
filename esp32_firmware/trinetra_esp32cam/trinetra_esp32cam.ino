@@ -137,7 +137,7 @@ void startCameraServer() {
   if (httpd_start(&camera_httpd, &config) == ESP_OK) {
     httpd_register_uri_handler(camera_httpd, &stream_uri);
     httpd_register_uri_handler(camera_httpd, &hud_uri);
-    Serial.println(F("[HTTP] Server started"));
+    Serial.println(F("[HTTP] Server started..."));
   }
 }
 
