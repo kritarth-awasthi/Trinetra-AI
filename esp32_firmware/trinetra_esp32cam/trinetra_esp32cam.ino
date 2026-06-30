@@ -175,12 +175,12 @@ void updateOLED() {
 class TrinetraBLECallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer* pServer) {
     bleConnected = true;
-    Serial.println(F("[BLE] App connected"));
+    Serial.println(F("[BLE] App connected..."));
     updateOLED();
   }
   void onDisconnect(BLEServer* pServer) {
     bleConnected = false;
-    Serial.println(F("[BLE] App disconnected"));
+    Serial.println(F("[BLE] App disconnected!!!"));
     BLEDevice::startAdvertising();
     updateOLED();
   }
