@@ -72,7 +72,7 @@ def on_voice_command(command: str):
     elif command == "stop":
         global running
         running = False
-        print("[CMD] Stopping pipeline...")
+        print("[CMD] Stopping pipeline........")
 
 
 def main():
