@@ -137,7 +137,7 @@ void startCameraServer() {
   if (httpd_start(&camera_httpd, &config) == ESP_OK) {
     httpd_register_uri_handler(camera_httpd, &stream_uri);
     httpd_register_uri_handler(camera_httpd, &hud_uri);
-    Serial.println(F("[HTTP] Server started........"));
+    Serial.println(F("[HTTP] Server started............"));
   }
 }
 
@@ -175,12 +175,12 @@ void updateOLED() {
 class TrinetraBLECallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer* pServer) {
     bleConnected = true;
-    Serial.println(F("[BLE] App connected.........."));
+    Serial.println(F("[BLE] App connected............."));
     updateOLED();
   }
   void onDisconnect(BLEServer* pServer) {
     bleConnected = false;
-    Serial.println(F("[BLE] App disconnected!!!!!!!!!!"));
+    Serial.println(F("[BLE] App disconnected!!!!!!!!!!!!!"));
     BLEDevice::startAdvertising();
     updateOLED();
   }
