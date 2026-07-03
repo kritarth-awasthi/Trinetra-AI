@@ -12,9 +12,9 @@ control commands and receive status notifications.
 ## Commands Sent from App
 | Command    | Effect                        |
 |---|---|
-| NIGHT_ON   | Activate night vision mode    |
-| NIGHT_OFF  | Return to normal mode         |
-| CAPTURE    | Trigger frame capture         |
+| NIGHT_ON   | Activate night vision mode.    |
+| NIGHT_OFF  | Return to normal mode.         |
+| CAPTURE    | Trigger frame capture.         |
 
 ## Status Received from Helmet
 ```
@@ -23,9 +23,9 @@ mode=NIGHT,det=No face
 ```
 
 ## Tech Stack
-- Kotlin
-- Android BLE API (BluetoothLeScanner, BluetoothGatt)
-- Android SDK min API 23
+- Kotlin.
+- Android BLE API (BluetoothLeScanner, BluetoothGatt).
+- Android SDK min API 23.
 
 ## Roadmap
 - Live camera feed view inside app (via WiFi HTTP stream).
