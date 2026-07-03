@@ -57,11 +57,11 @@ conversion or global equalisation.
 
 | Keyword       | Action                         |
 |---|---|
-| "night mode"  | Activate CLAHE night vision    |
-| "normal mode" | Deactivate night vision        |
-| "identify"    | Force face identification pass |
-| "capture"     | Save current frame to disk     |
-| "stop"        | Shutdown pipeline              |
+| "night mode"  | Activate CLAHE night vision.    |
+| "normal mode" | Deactivate night vision.        |
+| "identify"    | Force face identification pass. |
+| "capture"     | Save current frame to disk.     |
+| "stop"        | Shutdown pipeline.              |
 
 ## Roadmap
 
