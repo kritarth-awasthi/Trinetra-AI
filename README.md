@@ -85,11 +85,11 @@ Update `WIFI_SSID` and `WIFI_PASSWORD` in the `.ino` file before flashing.
 
 ## Roadmap
 
-- [ ] YOLOv8 object detection.
-- [ ] DeepFace recognition (replace LBPH).
-- [ ] Offline voice commands (Whisper — remove Google API).
-- [ ] Migrate processing to Raspberry Pi (on-helmet).
-- [ ] Real-time video stream inside Android app.
+- [ ] YOLOv8 object detection
+- [ ] DeepFace recognition (replace LBPH)
+- [ ] Offline voice commands (Whisper — remove Google API)
+- [ ] Migrate processing to Raspberry Pi (on-helmet)
+- [ ] Real-time video stream inside Android app
 
 ---
 *Kritarth Awasthi | BIT Mesra, Jaipur | May–Aug 2025*
