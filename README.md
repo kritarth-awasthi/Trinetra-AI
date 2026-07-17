@@ -75,9 +75,9 @@ for traditional night-vision aesthetic.
 Open `esp32_firmware/trinetra_esp32cam/trinetra_esp32cam.ino` in Arduino IDE.
 
 Required libraries (install via Library Manager):
-- Adafruit SSD1306.
-- Adafruit GFX Library.
-- ESP32 BLE Arduino.
+- Adafruit SSD1306
+- Adafruit GFX Library
+- ESP32 BLE Arduino
 
 Update `WIFI_SSID` and `WIFI_PASSWORD` in the `.ino` file before flashing.
 
