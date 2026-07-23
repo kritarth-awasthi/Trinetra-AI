@@ -65,9 +65,9 @@ conversion or global equalisation.
 
 ## Roadmap
 
-- [ ] YOLOv8 object detection (replace basic CV detection)
-- [ ] DeepFace recognition (replace LBPH)
-- [ ] Offline voice commands via Whisper (remove Google API dependency)
+- [ ] YOLOv8 object detection (replace basic CV detection).
+- [ ] DeepFace recognition (replace LBPH).
+- [ ] Offline voice commands via Whisper (remove Google API dependency).
 - [ ] Raspberry Pi migration (remove laptop from pipeline)
 - [ ] Onboard processing — no external device needed
 
