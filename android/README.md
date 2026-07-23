@@ -5,7 +5,7 @@ Built in Kotlin. Connects to the ESP32-CAM via BLE to send
 control commands and receive status notifications.
 
 ## BLE Communication
-- **Service UUID:** 4fafc201-1fb5-459e-8fcc-c5c9c331914b
+- **Service UUID:** 4fafc201-1fb5-459e-8fcc-c5c9c331914b.
 - **Command Characteristic (WRITE):** Send commands to helmet.
 - **Status Characteristic (NOTIFY):** Receive detection results.
 
