@@ -53,9 +53,9 @@ python python_pipeline/main.py --ip 192.168.1.100
 ```
 
 **Controls:**
-- `n` → toggle night mode
-- `c` → capture frame
-- `q` → quit
+- `n` → toggle night mode.
+- `c` → capture frame.
+- `q` → quit.
 - Voice: *"night mode"*, *"identify"*, *"capture"*, *"stop"*
 
 ---
